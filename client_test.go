@@ -21,13 +21,34 @@ const (
 	noun      = "PHP"
 )
 
-func ExampleFuckOff() {
-	msg, err := fuck.Off("America", "ds0nt")
+func ExampleFuckThing() {
+	msg, err := fuck.Thing("PHP", "ds0nt")
 	if err != nil {
 		panic(err)
 	}
 	fmt.Println(msg)
-	// Output: Fuck off, Jesus. - ds0nt
+
+	// Output: Fuck PHP. - ds0nt
+}
+
+func ExampleFuckOff() {
+	msg, err := fuck.Off("Molly", "ds0nt")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(msg)
+
+	// Output: Fuck off, Molly. - ds0nt
+}
+
+func ExampleFuckField() {
+	msg, err := fuck.Field("ds0nt", "Jesus", "Book of Ds0nt 1:5")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(msg)
+
+	// Output: And ds0nt said unto Jesus, 'Verily, cast thine eyes upon the field in which I grow my fucks', and Jesus gave witness unto the field, and saw that it was barren. - Book of Ds0nt 1:5
 }
 
 func TestClient(t *testing.T) {
