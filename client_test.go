@@ -21,7 +21,7 @@ const (
 	noun      = "PHP"
 )
 
-func ExampleFuckThing() {
+func ExampleThing() {
 	msg, err := fuck.Thing("PHP", "ds0nt")
 	if err != nil {
 		panic(err)
@@ -31,7 +31,7 @@ func ExampleFuckThing() {
 	// Output: Fuck PHP. - ds0nt
 }
 
-func ExampleFuckOff() {
+func ExampleOff() {
 	msg, err := fuck.Off("Molly", "ds0nt")
 	if err != nil {
 		panic(err)
@@ -41,7 +41,7 @@ func ExampleFuckOff() {
 	// Output: Fuck off, Molly. - ds0nt
 }
 
-func ExampleFuckField() {
+func ExampleField() {
 	msg, err := fuck.Field("ds0nt", "Jesus", "Book of Ds0nt 1:5")
 	if err != nil {
 		panic(err)
