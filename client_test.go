@@ -22,12 +22,12 @@ const (
 )
 
 func ExampleFuckOff() {
-	msg, err := fuck.Thing("PHP", "ds0nt")
+	msg, err := fuck.Off("America", "ds0nt")
 	if err != nil {
 		panic(err)
 	}
 	fmt.Println(msg)
-
+	// Output: Fuck off, Jesus. - ds0nt
 }
 
 func TestClient(t *testing.T) {
