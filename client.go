@@ -1,3 +1,6 @@
+// Package fuck provides a simple interface for interacting with the
+// Fuck Off As A Service (FOAAS) API.
+// See http://foaas.com for more details on what fucks are given.
 package fuck
 
 import (
